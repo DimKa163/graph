@@ -1,11 +1,11 @@
-﻿package interceptors
+package interceptors
 
 import (
 	"context"
+	"github.com/DimKa163/graph/internal/shared/logging"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
-	"graph/internal/shared/logging"
 	"time"
 )
 

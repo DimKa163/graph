@@ -1,6 +1,6 @@
-﻿package core
+package core
 
-import "graph/internal/shared"
+import "github.com/DimKa163/graph/internal/shared"
 
 type WarehouseType int
 
