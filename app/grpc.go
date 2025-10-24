@@ -1,10 +1,11 @@
-﻿package app
+package app
 
 import (
 	"context"
+	"net"
+
 	"github.com/DimKa163/graph/internal/shared/logging"
 	"google.golang.org/grpc"
-	"net"
 )
 
 type GRPCServer struct {

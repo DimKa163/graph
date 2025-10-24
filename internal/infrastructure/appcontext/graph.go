@@ -1,9 +1,10 @@
-﻿package appcontext
+package appcontext
 
 import (
 	"context"
-	"github.com/DimKa163/graph/internal/core"
 	"sync"
+
+	"github.com/DimKa163/graph/internal/core"
 )
 
 type GraphContext struct {

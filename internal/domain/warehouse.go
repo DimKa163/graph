@@ -1,7 +1,8 @@
-﻿package domain
+package domain
 
 import (
 	"context"
+
 	"github.com/beevik/guid"
 	"github.com/jackc/pgx/v5"
 )

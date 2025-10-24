@@ -1,4 +1,4 @@
-﻿package core
+package core
 
 type Stack struct {
 	nodes []*PathNode
