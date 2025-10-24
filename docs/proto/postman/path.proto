@@ -1,0 +1,36 @@
+﻿syntax = "proto3";
+package graph;
+
+option go_package = "/proto";
+
+
+enum NodeType {
+  UNRECOGNIZED  = 0;
+  FREE = 1;
+  MAIN = 2;
+  CENTRAL = 3;
+  MALL = 4;
+}
+
+message Node {
+  string id = 1;
+  string name = 2;
+  NodeType type = 3;
+  string time_zone = 4;
+  bool available_rest = 5;
+  int32 level = 6;
+  string address = 7;
+  bool only_stock_pickup_allowed = 8;
+}
+message Path {
+  repeated Node node = 1;
+}
+
+message GetPath {
+  string id = 1;
+  string default_warehouse_id = 2;
+}
+
+service PathService {
+  rpc Get(GetPath) returns(Path);
+}
