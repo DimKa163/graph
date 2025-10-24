@@ -1,4 +1,4 @@
-﻿package shared
+package shared
 
 const (
 	WarehouseCategoryMALL    = "80010000004322B0"

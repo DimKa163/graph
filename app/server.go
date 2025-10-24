@@ -1,7 +1,12 @@
-﻿package app
+package app
 
 import (
 	"context"
+	"net"
+	"os/signal"
+	"syscall"
+	"time"
+
 	"github.com/DimKa163/graph/internal/domain"
 	"github.com/DimKa163/graph/internal/infrastructure/appcontext"
 	"github.com/DimKa163/graph/internal/infrastructure/persistence"
@@ -13,10 +18,6 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"google.golang.org/grpc"
-	"net"
-	"os/signal"
-	"syscall"
-	"time"
 )
 
 type ServerImpl interface {

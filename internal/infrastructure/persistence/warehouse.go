@@ -1,8 +1,9 @@
-﻿package persistence
+package persistence
 
 import (
 	"context"
 	"database/sql"
+
 	"github.com/DimKa163/graph/internal/core/db"
 	"github.com/DimKa163/graph/internal/domain"
 	"github.com/beevik/guid"

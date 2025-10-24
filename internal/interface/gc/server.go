@@ -1,7 +1,8 @@
-﻿package gc
+package gc
 
 import (
 	"context"
+
 	"github.com/DimKa163/graph/internal/core"
 	"github.com/DimKa163/graph/internal/interface/gc/proto"
 	"github.com/DimKa163/graph/internal/usecase"

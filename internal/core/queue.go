@@ -1,4 +1,4 @@
-﻿package core
+package core
 
 type Queue struct {
 	nodes []*PathNode
